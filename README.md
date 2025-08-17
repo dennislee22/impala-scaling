@@ -3,22 +3,12 @@
 
 
 ```
-time="2025-08-15T04:49:12Z" level=info msg="needsSuspend is false because DisableAutoSuspend is true."
-time="2025-08-15T04:49:12Z" level=info msg="needsScaleUp is true as there are 3 queries queued."
-time="2025-08-15T04:49:12Z" level=info msg="enoughConsecutive Up calls false as current 0 target 1"
-time="2025-08-15T04:49:12Z" level=info msg="Impala-autoscaler sleeping for 20s"
-time="2025-08-15T04:49:32Z" level=info msg="Group Set: root.default Load: numQueriesQueued 3, numQueriesRunning 1"
-time="2025-08-15T04:49:32Z" level=info msg="Processing Group Set: root.default"
-time="2025-08-15T04:49:32Z" level=info msg="needsScaleDown is false as current Executor Groups 1 is at or below a minimum number of executor groups 1, maximum is 3."
-time="2025-08-15T04:49:32Z" level=info msg="needsSuspend is false because DisableAutoSuspend is true."
 time="2025-08-15T04:49:32Z" level=info msg="needsScaleUp is true as there are 3 queries queued."
 time="2025-08-15T04:49:32Z" level=info msg="Impala autoscaler will attempt to add executor group."
 time="2025-08-15T04:49:32Z" level=info msg="Adding new executor group: impala-executor-001"
 time="2025-08-15T04:49:32Z" level=warning msg="No current healthy release found for service name: impala-executor"
 time="2025-08-15T04:49:32Z" level=info msg="Fetching history for release name: impala-executor-689eb14e-111b624b"
 time="2025-08-15T04:49:32Z" level=info msg="Found historical release: impala-executor, Release Name: impala-executor-689eb14e-111b624b, Status: deployed, Version: 1"
-time="2025-08-15T04:49:32Z" level=info msg="Installing executor group \"impala-executor-001\" in namespace \"impala-impala1\""
-W0815 04:49:33.142196       1 warnings.go:70] unknown field "spec.template.spec.securityContext.capabilities"
 time="2025-08-15T04:49:33Z" level=info msg="There is a scale up pending, targetExecutorGroups=2"
 time="2025-08-15T04:49:33Z" level=info msg="Impala-autoscaler sleeping for 20s"
 time="2025-08-15T04:49:53Z" level=info msg="Group Set: root.default Load: numQueriesQueued 3, numQueriesRunning 1"
