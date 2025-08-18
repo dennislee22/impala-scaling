@@ -1,25 +1,10 @@
 import jaydebeapi
 import os
-
-# --- Configuration ---
-
-# Set JAVA_HOME if it's not configured in your environment
-# This points to the main directory of your Java installation
 os.environ['JAVA_HOME'] = '/opt/homebrew/opt/openjdk'
-
-# Path to your downloaded Impala JDBC driver JAR file
 impala_driver_jar = "/Users/dennislee/workspace/ImpalaJDBC42-2.6.33.1062.jar"
-
-# --- IMPORTANT ---
-# Added ';AllowSelfSignedCerts=1' to the end of the URL to disable SSL certificate validation.
 jdbc_url = "jdbc:impala://coordinator-impala1.apps.dlee5.cldr.example:443/default;AuthMech=3;transportMode=http;httpPath=cliservice;ssl=1;AllowSelfSignedCerts=1"
-
-# The jaydebeapi library takes credentials separately
-# IMPORTANT: Replace "PASSWORD" with your actual password before running
 credentials = ["dennislee", "PASSWORD"]
 
-# This complex query is designed to stress the SQL engine.
-# It generates a large cartesian product, then applies expensive calculations.
 complex_query = """
 SELECT
     t1.id AS id_1,
@@ -81,7 +66,6 @@ ORDER BY
 LIMIT 100
 """
 
-# --- Connection and Query Execution ---
 conn = None
 try:
     # Establish the connection
@@ -94,13 +78,11 @@ try:
     )
     print("Successfully connected to Impala.")
 
-    # Create a cursor and execute the complex query
     print("\nExecuting complex query... this may take some time.")
     curs = conn.cursor()
     curs.execute(complex_query)
     print("Query execution finished.")
 
-    # Fetch all the results
     results = curs.fetchall()
 
     if results:
