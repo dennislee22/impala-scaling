@@ -5,6 +5,10 @@
 An elastic computing architecture is rapidly becoming the standard for data-driven organizations that need to query massive datasets without maintaining a fleet of idle, expensive servers.
 With the help of K8s, it provides the robust, scalable, and self-healing infrastructure needed to run a distributed SQL query engine. In this scalable Impala architecture, the autoscaler acts as a dedicated pod that monitors the Impala cluster's workload. When the coordinator pod receives the SQL query, parses it, creates an execution plan, and distributes tasks to the executor pods. Running each executor as a separate pod is what makes the system horizontally scalable.
 
+## Platform Requirement
+
+☑️ Cloudera Data Warehouse (CDW) 1.5.x
+
 ## Here’s the workflow:
 
 1. The virtual warehouse is enabled with `Concurrency Autoscaling` to the max of 3 executor pods.
