@@ -7,7 +7,7 @@ With the help of K8s, it provides the robust, scalable, and self-healing infrast
 
 ## Here’s the workflow:
 
-1. A user submits one or more complex SQL queries. Here's the sample of complex query.
+1. A user submits one or more complex SQL queries. Here's the sample of [complex query](complexSQL.py).
 2. The autoscaler observes metrics like the number of queued queries, CPU utilization on the existing executor pods, or memory pressure.
 
 ```
