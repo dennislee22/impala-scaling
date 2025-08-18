@@ -64,7 +64,7 @@ statestored-7db5c86b9c-hkzhd         2/2     Running           0          49m
 ```
 
 Note that the CDW dashboard shows number of executor node has increased from 1 to 3 (indicated by the green bar).
-<img width="600" height="293" alt="image" src="https://github.com/user-attachments/assets/90131568-1815-4816-976c-f7aac4d50451" />
+<img width="800" height="293" alt="image" src="https://github.com/user-attachments/assets/90131568-1815-4816-976c-f7aac4d50451" />
 
 4. These new pods seamlessly join the Impala cluster and immediately start processing tasks, speeding up query execution.
 5. Once the workload subsides, the autoscaler will scale in, terminating the extra pods to save resources and reduce costs.
