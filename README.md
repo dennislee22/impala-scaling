@@ -1,6 +1,6 @@
 # Elastic Scaling of Impala
 
-<img width="757" height="488" alt="image" src="https://github.com/user-attachments/assets/740276af-d1a3-4eb7-8ca1-8a934d2978f3" />
+<img width="600" height="488" alt="image" src="https://github.com/user-attachments/assets/740276af-d1a3-4eb7-8ca1-8a934d2978f3" />
 
 An elastic computing architecture is rapidly becoming the standard for data-driven organizations that need to query massive datasets without maintaining a fleet of idle, expensive servers.
 With the help of K8s, it provides the robust, scalable, and self-healing infrastructure needed to run a distributed SQL query engine. In this scalable Impala architecture, the autoscaler acts as a dedicated pod that monitors the Impala cluster's workload. When the coordinator pod receives the SQL query, parses it, creates an execution plan, and distributes tasks to the executor pods. Running each executor as a separate pod is what makes the system horizontally scalable.
@@ -64,7 +64,7 @@ statestored-7db5c86b9c-hkzhd         2/2     Running           0          49m
 ```
 
 Note that the CDW dashboard shows number of executor node has increased from 1 to 3 (indicated by the green bar).
-<img width="900" height="293" alt="image" src="https://github.com/user-attachments/assets/90131568-1815-4816-976c-f7aac4d50451" />
+<img width="600" height="293" alt="image" src="https://github.com/user-attachments/assets/90131568-1815-4816-976c-f7aac4d50451" />
 
 4. These new pods seamlessly join the Impala cluster and immediately start processing tasks, speeding up query execution.
 5. Once the workload subsides, the autoscaler will scale in, terminating the extra pods to save resources and reduce costs.
