@@ -1,4 +1,4 @@
-# Elastic Scaling of Impala
+# Elastic Scaling of Impala 💎⛁
 
 <img width="600" height="488" alt="image" src="https://github.com/user-attachments/assets/740276af-d1a3-4eb7-8ca1-8a934d2978f3" />
 
